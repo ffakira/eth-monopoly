@@ -47,9 +47,9 @@ function Nav(): JSX.Element | null {
                 <span className="navbar-text mr-5 text-dark">
                     {bal ? `${roundNearest(bal)} ETH` : ``}
                 </span>
-                <span className="navbar-text text-dark">
-                    {accounts ? trimAddress(accounts[0]) : 'No address detected!'}
-                </span>
+                {/*<span className="navbar-text text-dark">*/}
+                {accounts ? trimAddress(accounts[0], true) : ''}
+                {/*</span>*/}
             </div>
         </nav>
     );
